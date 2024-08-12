@@ -1,0 +1,20 @@
+// estilos de productos
+
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    object-fit: cover;
+}
+.photo {
+    display: flex;
+}
+
+
