@@ -1,7 +1,7 @@
 
-// estilos para bs
-
 @import "./mixin";
+
+// estilos para bs
 
 .pre-bt-title {
     margin-bottom: 20px;
@@ -23,7 +23,6 @@
 .card-img-top {
     @include medidas-base (100%, auto);
     border: 1px solid black;
-    padding: 400px;
 }
 
 .btn {
