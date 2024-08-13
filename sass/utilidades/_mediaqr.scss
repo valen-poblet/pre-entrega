@@ -1,5 +1,7 @@
 /* mq desktop */
 
+@import "./mixin";
+
 @media screen and (min-width: 1024px) {
 
     main {
@@ -28,7 +30,6 @@
     }
     
     .card-bs {
-        width: 12rem;
-        height: auto;
+        @include medidas-base (12rem, auto);
     }
 }

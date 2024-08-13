@@ -10,6 +10,7 @@
 @import "utilidades/bs";
 @import "utilidades/mediaqr";
 @import "utilidades/variables";
+@import "utilidades/mixin";
 
 /* estilos de header */
 
@@ -22,15 +23,14 @@ header{
     align-items: center;
     padding: 10px;
     img {
-        width: 60px;
-        height: auto;
+        @include medidas-base (60px, auto);
             }
     .nav-bar{
         position: sticky;
         top: 0;
         z-index: 10;
         background-color: $color-principal-background;
-        width: 100%;
+        @include medidas-base (100%, auto);
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -66,7 +66,6 @@ main {
         font-family: "Roboto", sans-serif;
         background-color: $color-secundario-background;
         margin: 0;
-        padding: 10px;
         font-size: 2rem;
     }
 
@@ -93,8 +92,7 @@ main {
         }
 
     .location iframe {
-        width: 100%;
-        height: auto;
+        @include medidas-base (100%, auto);
         max-width: 600px;
     }
 }
