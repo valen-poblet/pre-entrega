@@ -33,3 +33,35 @@
         @include medidas-base (12rem, auto);
     }
 }
+
+@media screen and (min-width: 768px) {
+
+    main {
+        padding-left: 100px;
+        padding-right: 100px;
+        }
+
+    .photo-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .location {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .cards-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .card-bs {
+        @include medidas-base (12rem, auto);
+    }
+}
